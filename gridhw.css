@@ -1,0 +1,60 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "adidas beats apple amazon"
+                        
+}
+
+.adias{
+    grid-area:adias1;
+}
+
+.beats{
+    grid-area:beats1;
+}
+
+}
+
+.apple{
+    grid-area:apple1;
+}
+
+.amazon{
+    grid-area: amazon1;
+}
+
+
+
+/* Group Selecting the 4 Grid Area Classes */
+
+.adidas, .beats, .apple, .amazon{
+    justify-self: center;
+    align-self: center;
+    padding: 3em;
+    max-height: 50vh;
+    border: 1px solid #eee
+}
+
+
+#header {
+    grid-area:header;
+    background-color: lightgray;
+
+}
+
+main{
+    background-color:var(--dark);
+    height: auto;
+}
+
+img {
+    border-radius: auto;
+    padding: 5px;
+    float: center;
+    height: 80px;
+    object-fit: contain;
+    width: auto;
+}
+
